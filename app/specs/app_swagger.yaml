@@ -1,0 +1,22 @@
+openapi: "3.0.0"
+
+info:
+  title: "Flask Template"
+  version: "1.0.0"
+
+servers:
+  - url: http://0.0.0.0:80/api
+
+tags:
+  - name: "status"
+
+paths:
+  /status:  # GET status
+    get:
+      tags:
+        - "status"
+      description: Check Health Status
+      operationId: api.apiHealthy.health_check
+      responses:
+        200:
+          description: Status is healthy
