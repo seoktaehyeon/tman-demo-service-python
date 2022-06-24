@@ -9,7 +9,7 @@ docker build -t tman-demo-service:python .
 ## 如何运行服务
 
 ```bash
-docker run -d -p 8082:80 -it tman-demo-service:python
+docker run -d -p 8082:8080 -it tman-demo-service:python
 ```
 
 ## 如何访问服务
@@ -18,4 +18,4 @@ docker run -d -p 8082:80 -it tman-demo-service:python
 curl http://127.0.0.1:8082/api/status
 ```
 
-返回结果为 `{"Status":"Healthy"}`
+返回结果为 `{"status":"healthy"}`

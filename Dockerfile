@@ -7,6 +7,6 @@ COPY . .
 RUN pip install -r requirements.txt
 
 CMD ./launch.sh
-EXPOSE 80
+EXPOSE 8080
 
 HEALTHCHECK --interval=10s --timeout=5s --retries=3 CMD ./health_check.sh
